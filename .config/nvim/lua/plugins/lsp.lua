@@ -20,9 +20,11 @@ return {
       "nvim-telescope/telescope.nvim",
       "mfussenegger/nvim-dap-python",
     },
+    branch = "regexp",
     opts = {
       name = "venv",
       auto_refresh = false,
+      -- stay_on_this_version = true,
     },
     event = "VeryLazy",
     keys = {
@@ -90,5 +92,4 @@ return {
       }
     end,
   },
-  -- ~/.config/nvim/lua/plugins/lsp.lua
 }

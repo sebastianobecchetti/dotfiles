@@ -104,6 +104,7 @@ return {
         "vim",
         "yaml",
         "rust",
+        "java",
       })
     end,
   },
@@ -237,4 +238,5 @@ return {
 		},
   },
   { "echasnovski/mini.nvim", version = "*" },
+  
 }
