@@ -1,6 +1,6 @@
 [Desktop Entry]
-Icon=/home/gay/.local/share/JetBrains/Toolbox/toolbox.svg
-Exec=/home/gay/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
+Icon=/home/sebastiano/.local/share/JetBrains/Toolbox/toolbox.svg
+Exec=/home/sebastiano/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
 Version=1.0
 Type=Application
 Categories=Development

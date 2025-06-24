@@ -24,6 +24,19 @@ vim.keymap.set("n", "<F9>", function()
       print("Cargo project non trovato.")
       return
     end
+  elseif filetype == "java" then
+    -- Trova la directory con build.gradle
+    local gradle_root = vim.fn.findfile("build.gradle", ".;")
+    if gradle_root == "" then
+      gradle_root = vim.fn.findfile("build.gradle.kts", ".;")
+    end
+    if gradle_root == "" then
+      print("Progetto Gradle non trovato.")
+      return
+    end
+
+    local dir = vim.fn.fnamemodify(gradle_root, ":p:h")
+    cmd = "gradle run"
   else
     print("Filetype '" .. filetype .. "' non supportato.")
     return
@@ -31,4 +44,4 @@ vim.keymap.set("n", "<F9>", function()
 
   -- Invia il comando al nuovo split tmux
   os.execute("tmux send-keys '" .. cmd .. "' C-m")
-end, { desc = "Save and run current file in new tmux split (Python or Rust)" })
+end, { desc = "Save and run current file in new tmux split (Python, Rust, Java)" })
