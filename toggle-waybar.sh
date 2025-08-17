@@ -1,1 +1,0 @@
-.config/hypr/toggle-waybar.sh
