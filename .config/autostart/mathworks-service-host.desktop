@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=Mathworks Service Host
-Exec=/home/sebastiano/.MathWorks/ServiceHost/-mw_shared_installs/v2025.2.2.1/bin/glnxa64/MathWorksServiceHost service --realm-id companion@prod@production
+Exec=/home/sebastiano/.MathWorks/ServiceHost/-mw_shared_installs/v2025.9.0.2/bin/glnxa64/MathWorksServiceHost service --realm-id companion@prod@production
 Terminal=false
