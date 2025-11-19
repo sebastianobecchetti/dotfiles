@@ -12,3 +12,4 @@ source ~/.local/share/omarchy/default/bash/rc
 
 . "$HOME/.local/share/../bin/env"
 alias n='nvim'
+. "$HOME/.cargo/env"

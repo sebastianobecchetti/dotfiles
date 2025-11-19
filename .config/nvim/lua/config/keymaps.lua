@@ -71,7 +71,7 @@ vim.keymap.set("n", "<F10>", function()
 
     if project_dir then
       -- Comando Maven standard
-      cmd = 'cd "' .. project_dir .. '" && mvn clean compile && mvn javafx:run'
+      cmd = 'cd "' .. project_dir .. '" && mvn clean compile && mvn javafx:run -Dprism.order=sw'
     else
       print("File pom.xml non trovato. Apertura della directory.")
     end
